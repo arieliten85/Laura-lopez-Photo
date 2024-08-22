@@ -1,0 +1,56 @@
+.container {
+  background-color: var(--primary-bg-color);
+  width: 100%;
+  padding: 150px 20px 80px;
+}
+.container h1,
+.text,
+.data {
+  color: #877964;
+  text-align: center;
+}
+
+.container .text {
+  text-transform: uppercase;
+  font-family: var(--text-font-secondary);
+  font-size: 12px;
+}
+
+.container .data {
+  font-family: var(--text-font-regular);
+}
+.container h1 {
+  font-size: 15vmin;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  height: 90px;
+
+  font-family: "Zeyada", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width: 1240px) {
+  .container {
+    padding: 200px 50px 80px;
+  }
+
+  .container h1 {
+    font-size: 15vmin;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 120px;
+
+    font-family: "Zeyada", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+}

@@ -1,0 +1,83 @@
+.galerySection-container {
+  background-color: var(--body-bg-color);
+  width: 100%;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-text h1,
+h2,
+.content-data p {
+  color: var(--primary-text-color);
+}
+
+.content-text h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--text-font-secction);
+  font-weight: 400;
+  font-size: var(--spacing-35);
+  padding-top: var(--spacing-20);
+}
+.content-text h2 {
+  text-align: center;
+  padding-top: var(--spacing-20);
+  padding-bottom: var(--spacing-20);
+  font-size: var(--spacing-15);
+  font-weight: 200;
+  font-family: var(--text-font-regular);
+}
+
+.content-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-data p {
+  line-height: 27px;
+  text-align: center;
+  font-family: var(--text-font-secondary);
+}
+
+.content-data button {
+  cursor: pointer;
+  border: none;
+  padding: var(--spacing-10);
+  margin-top: var(--spacing-30);
+  text-transform: uppercase;
+  font-size: var(--size-10);
+  color: var(--text-color-white);
+  font-family: var(--text-font-regular);
+  background-color: var(--button-background-color);
+}
+
+@media (min-width: 1240px) {
+  .galerySection-container {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: var(--spacing-80);
+    padding-bottom: var(--spacing-80);
+  }
+
+  .content-data,
+  .content-text {
+    width: 40%;
+  }
+
+  .content-text h1 {
+    width: 300px;
+    margin: 0 auto;
+    font-size: var(--size-35);
+    padding: 0;
+  }
+}
