@@ -1,0 +1,23 @@
+.category-section-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.MuiCardMedia-root {
+  height: 100%;
+
+  box-shadow: none !important;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card {
+  cursor: pointer;
+  margin: 10px !important;
+  box-shadow: none !important;
+}
+.css-2ulfj5-MuiTypography-root {
+  color: var(--primary-text-color);
+  text-align: center;
+  font-family: var(--text-font-secondary) !important;
+}

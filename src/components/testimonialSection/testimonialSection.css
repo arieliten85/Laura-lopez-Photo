@@ -1,0 +1,115 @@
+.testimonial-container {
+  margin: 0 auto;
+  padding: 30px 0;
+  text-align: center;
+  width: 90%;
+}
+
+.testimonial-header {
+  margin-bottom: var(--size-20);
+}
+
+.testimonial-title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: var(--size-30);
+  color: var(--color-grey-dark);
+  margin-bottom: var(--size-20);
+  font-family: var(--text-font-section);
+}
+
+.testimonial-subtitle {
+  font-size: var(--size-20);
+  font-family: var(--text-font-section);
+  color: var(--color-grey-dark);
+  margin-bottom: 20px;
+}
+
+.testimonial-swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 450px;
+  background-color: var(--body-bg-color);
+  padding: 40px;
+}
+
+.testimonial-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonial-icon {
+  font-size: var(--size-50);
+  color: var(--color-grey-ligth);
+  margin-bottom: var(--size-35);
+}
+
+.testimonial-rating {
+  margin-top: var(--size-50);
+  margin-bottom: var(--size-10);
+}
+
+.testimonial-star {
+  color: var(--color-grey-ligth);
+  font-size: var(--size-20);
+  margin: 0 2px;
+}
+
+.testimonial-text {
+  color: var(--color-grey);
+  font-size: var(--size-20) !important;
+  font-weight: 400 !important;
+  font-family: var(--text-font-section);
+  margin: 0 auto;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.testimonial-name {
+  color: var(--color-grey) !important;
+  font-family: var(--text-font-section);
+  font-size: var(--size-20);
+  text-align: center;
+  font-weight: bold;
+}
+
+.testimonial-container .swiper-pagination {
+  bottom: 10px;
+}
+
+.testimonial-container .swiper-pagination-bullet {
+  background: var(--color-primary);
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
+
+.testimonial-container .swiper-pagination-bullet-active {
+  background: var(--color-accent);
+}
+
+@media (min-width: 1240px) {
+  .testimonial-container {
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center;
+    width: 70%;
+  }
+
+  .testimonial-text {
+    width: 90% !important;
+  }
+
+  .testimonial-title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: var(--size-50);
+    color: var(--color-grey-dark);
+    margin: var(--size-20);
+    font-family: var(--text-font-section);
+  }
+}

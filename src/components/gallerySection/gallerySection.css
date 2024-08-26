@@ -43,17 +43,18 @@ h2,
 
 .content-data p {
   line-height: 27px;
-  text-align: center;
+
   font-family: var(--text-font-secondary);
 }
 
 .content-data button {
+  max-width: 400px;
   cursor: pointer;
   border: none;
-  padding: var(--spacing-10);
+  padding: var(--spacing-20);
   margin-top: var(--spacing-30);
   text-transform: uppercase;
-  font-size: var(--size-10);
+  font-size: var(--size-15);
   color: var(--text-color-white);
   font-family: var(--text-font-regular);
   background-color: var(--button-background-color);

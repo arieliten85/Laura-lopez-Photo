@@ -1,36 +1,47 @@
 :root {
+  /* Background Colors */
   --body-bg-color: #fbfbfb;
-
-  --button-background-color: #887a65;
-
   --primary-bg-color: #f3f0e8;
 
+  /* Text Colors */
   --primary-text-color: #877964;
   --text-color-black: black;
   --text-color-white: white;
 
-  --text-font-secction: "Times New Roman", Times, serif;
+  /* Button Colors */
+  --button-background-color: #aca293;
 
+  /* Additional Colors */
+
+  --color-grey-ligth: rgb(201, 189, 170);
+  --color-grey-dark: #867862;
+
+  /* Font Families */
   --text-font-primary: "Fira Sans", sans-serif;
   --text-font-secondary: Georgia, "Times New Roman", Times, serif;
   --text-font-regular: Verdana, Geneva, Tahoma, sans-serif;
+  --text-font-section: "Cormorant Garamond", serif;
+  --text-font-secction: "Times New Roman", Times, serif; /* Corrected to "text-font-section" */
 
+  /* Sizes */
   --size-5: 5px;
   --size-10: 10px;
-  --size-10: 15px;
+  --size-15: 15px;
   --size-20: 20px;
   --size-30: 30px;
   --size-35: 35px;
   --size-45: 45px;
+  --size-50: 50px;
 
+  /* Spacing */
   --spacing-10: 10px;
-  --spacing-10: 15px;
   --spacing-20: 20px;
   --spacing-30: 30px;
   --spacing-35: 35px;
   --spacing-40: 40px;
   --spacing-80: 80px;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -42,4 +53,9 @@ body {
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.swiper-slide {
+  padding: 0 !important;
+  min-height: auto;
 }

@@ -1,7 +1,7 @@
 .container {
   background-color: var(--primary-bg-color);
   width: 100%;
-  padding: 150px 20px 80px;
+  padding: 80px 20px 80px;
 }
 .container h1,
 .text,
@@ -36,7 +36,7 @@
 
 @media (min-width: 1240px) {
   .container {
-    padding: 200px 50px 80px;
+    padding: 100px 50px 100px;
   }
 
   .container h1 {
