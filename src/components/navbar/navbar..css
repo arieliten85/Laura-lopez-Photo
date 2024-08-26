@@ -58,16 +58,19 @@
   gap: 10px;
 }
 .logo img {
-  width: 30px;
+  width: 50px;
   z-index: 4;
+  background-color: rgba(215, 221, 215, 0.5);
+  border-radius: 50%;
+  padding: 5px;
 }
 .logo p {
-  width: 100px;
-
+  font-size: 30px;
   cursor: pointer;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Allison", cursive;
   font-weight: 400;
   z-index: 4;
+  color: rgb(154, 158, 154);
 }
 
 .navContainer {
@@ -135,7 +138,7 @@
 
 .navLink {
   position: relative;
-  color: var(--text-color-black);
+  color: rgb(154, 158, 154);
 }
 
 .overlay {
@@ -157,13 +160,15 @@
 
 .linksContainer li {
   font-size: 15px;
-  cursor: pointer;
 
+  cursor: pointer;
+  font-family: var(--text-font-section);
   padding: 10px !important;
   text-transform: uppercase;
 }
 .linksContainer li.focused .navLink {
-  color: var(--primary-text-color);
+  color: var(--color-grey-dark);
+  font-weight: 800 !important;
 }
 
 .subMenu {
