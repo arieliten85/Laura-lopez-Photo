@@ -33,5 +33,5 @@ export const navigationLinks: NavigationLinksProps[] = [
   },
   { name: "Bodas", path: "/bodas" },
   { name: "Sobre mí", path: "/sobre-mi" },
-  { name: "Contacts", path: "/contacts" },
+  { name: "Contacto", path: "/contacto" },
 ];

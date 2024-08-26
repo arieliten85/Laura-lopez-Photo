@@ -21,7 +21,7 @@
   --text-font-secondary: Georgia, "Times New Roman", Times, serif;
   --text-font-regular: Verdana, Geneva, Tahoma, sans-serif;
   --text-font-section: "Cormorant Garamond", serif;
-  --text-font-secction: "Times New Roman", Times, serif; /* Corrected to "text-font-section" */
+  /* --text-font-secction: "Times New Roman", Times, serif; */
 
   /* Sizes */
   --size-5: 5px;
@@ -58,4 +58,29 @@ body {
 .swiper-slide {
   padding: 0 !important;
   min-height: auto;
+}
+
+.customButton {
+  text-transform: uppercase;
+  transition: 0.3s;
+  padding: 12px 24px;
+  font-size: 1rem !important;
+  color: white;
+  background-color: var(--color-grey-ligth);
+  border: none;
+
+  cursor: pointer;
+}
+
+.customButton:hover {
+  background-color: var(--color-grey-dark);
+}
+
+h1 {
+  font-family: var(--text-font-section);
+  font-weight: 400;
+}
+h2 {
+  font-weight: 200;
+  font-family: var(--text-font-regular);
 }

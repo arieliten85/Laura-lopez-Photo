@@ -20,7 +20,9 @@ export const GalerySection = () => {
           maravillosa de preservar los recuerdos y conectarnos con nuestro
           pasado.
         </p>
-        <button>Imagenes que identifican mi estilo</button>
+        <button className="customButton content-data-button">
+          Imagenes que identifican mi estilo
+        </button>
       </div>
     </div>
   );
