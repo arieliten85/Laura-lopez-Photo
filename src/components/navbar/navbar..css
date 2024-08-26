@@ -187,7 +187,15 @@
   text-transform: uppercase;
   color: var(--text-color-black);
   border-bottom: var(--primary-text-color) solid 1px;
+  cursor: pointer;
   user-select: none; /* Añadido para evitar la selección de texto */
+}
+/* Estilo para el enlace del submenú activo */
+.subMenu-item.active {
+  background-color: rgba(0, 0, 0, 0.1); /* Fondo de resaltado */
+  color: var(
+    --color-primary-light
+  ); /* Cambia el color del texto si es necesario */
 }
 
 .subMenu-item:hover {
