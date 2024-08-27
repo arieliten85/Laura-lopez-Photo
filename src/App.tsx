@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { NavBar } from "./components/navbar/NavBar";
+import { Navigation } from "./components/navegation/Navegation";
 import { Slider } from "./components/slider/Slider";
 import { Home } from "./views/Home";
 
 function App() {
   return (
     <>
-      <NavBar />
+      <Navigation />
       <Slider />
       <Routes>
         <Route path="/" element={<Home />} />

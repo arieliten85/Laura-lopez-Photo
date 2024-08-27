@@ -1,11 +1,13 @@
 .swiper {
   margin-top: 80px;
+  z-index: 1;
 }
 
 .swiper-slide {
   height: auto;
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 
 .image-content {

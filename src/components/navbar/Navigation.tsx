@@ -1,4 +1,4 @@
-import { navigationLinks } from "./apiLinks/api";
+import { navigationLinks } from "../navegation/apiLinks/api";
 import { NavItem } from "./NavItem";
 
 interface NavigationProps {
