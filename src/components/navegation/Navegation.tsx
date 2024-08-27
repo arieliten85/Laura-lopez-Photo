@@ -1,12 +1,14 @@
 import { useState } from "react";
 import camera from "../../assets/icono-camera.png";
 import { FaBars, FaAngleDown } from "react-icons/fa";
+import { IoCloseSharp } from "react-icons/io5";
 import "./navigation.css";
 import { Link, useLocation } from "react-router-dom";
 
 export const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [showServices, setShowServices] = useState(false);
+
   const location = useLocation();
 
   // Check if the current path matches the given path
@@ -22,7 +24,7 @@ export const Navigation = () => {
   const toggleMenu = () => {
     setShowMenu(!showMenu);
     if (showMenu) {
-      setShowServices(false); // Close the submenu when the menu is closed
+      setShowServices(false);
     }
   };
 
@@ -68,13 +70,6 @@ export const Navigation = () => {
                     ? "activeLink desktop-link"
                     : "desktop-link"
                 }
-                onClick={(e) => {
-                  e.preventDefault(); // Prevent default link behavior
-                  toggleServices(); // Toggle submenu on click
-                  if (!showMenu) {
-                    toggleMenu(); // Open the main menu if it is closed
-                  }
-                }}
               >
                 Sesiones <FaAngleDown />
               </a>
@@ -209,8 +204,13 @@ export const Navigation = () => {
         </div>
 
         <label htmlFor="show-menu" className="menu-icon">
-          <FaBars />
+          {!showMenu ? <FaBars /> : <IoCloseSharp />}
         </label>
+
+        <div
+          onClick={closeMenu}
+          className={`overlay ${showMenu ? "active" : ""}`}
+        />
       </nav>
     </div>
   );
