@@ -5,14 +5,18 @@ import "swiper/css/pagination";
 import "./slider.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { ImagesHome } from "../../apis/ApiSliders";
+import { ImagesSliderProps } from "../../apis/ApiSliders";
 import { SwiperConfigSlider } from "../../config/swipe/swipeConfig";
 
-export const Slider = () => {
+interface SliderProps {
+  ImagesSlider: ImagesSliderProps[];
+}
+
+export const Slider = ({ ImagesSlider }: SliderProps) => {
   return (
     <div className="slider-container">
       <Swiper {...SwiperConfigSlider}>
-        {ImagesHome.map((item, index) => (
+        {ImagesSlider.map((item, index) => (
           <SwiperSlide key={index} className="slider-swiper-slide">
             <div className="image-content">
               <img src={item.img} alt={item.name} />
