@@ -1,0 +1,99 @@
+.communion-content {
+  background-color: var(--primary-bg-color);
+  width: 100%;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.communion-title {
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  font-family: var(--text-font-secondary);
+  font-size: 24px;
+  color: #877964;
+  text-align: center;
+}
+
+.communion-text {
+  font-size: 18px;
+  font-family: var(--text-font-section);
+  color: var(--color-grey-dark);
+  text-align: justify;
+  padding: 10px;
+  line-height: 28px;
+}
+
+.communion-content-icon {
+  text-align: center;
+}
+
+.communion-firstSection-icon {
+  max-width: 80px;
+  margin: 20px auto;
+}
+
+.communion-firstSection-container,
+.communion-secondSection-container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.communion-secondSection-container .communion-title {
+  font-size: 30px;
+}
+
+.communion-gallery-container {
+  padding: 20px;
+}
+
+.communion-gallery-card {
+  margin: 10px;
+}
+
+.communion-gallery-card_media {
+  height: 100%;
+  box-shadow: none !important;
+  object-fit: cover;
+}
+
+.MuiDialog-paper {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  max-width: 95vw;
+  max-height: 95vh;
+  margin: 0 !important;
+  width: calc(100% - 20px) !important;
+}
+
+.MuiDialogContent-root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 !important;
+}
+
+.expanded-image {
+  width: 100% !important;
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+}
+.comunion-contact-container {
+  background-color: var(--primary-bg-color);
+  width: 100%;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 200px;
+}
+.comunion-contact-button {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}

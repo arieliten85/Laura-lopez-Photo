@@ -8,27 +8,26 @@
 .footer-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .footer-column {
-  flex: 1;
   min-width: 200px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  align-items: center;
 }
 
 .footer-heading {
   color: var(--primary-text-color);
   font-family: var(--text-font-section);
   margin-bottom: 10px;
+  font-size: 1.3rem;
 }
 
 .footer-list {
@@ -38,8 +37,8 @@
 }
 
 .footer-item {
-  text-align: center;
   margin-bottom: 5px;
+  font-size: 1.1rem;
 }
 
 .footer-social {

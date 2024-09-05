@@ -1,7 +1,7 @@
 :root {
   /* Background Colors */
   --body-bg-color: #fbfbfb;
-  --primary-bg-color: #f3f0e8;
+  --primary-bg-color: #f9f7f2;
 
   /* Text Colors */
   --primary-text-link: rgb(154, 158, 154);
@@ -31,6 +31,7 @@
   --size-20: 20px;
   --size-30: 30px;
   --size-35: 35px;
+  --size-40: 40px;
   --size-45: 45px;
   --size-50: 50px;
 

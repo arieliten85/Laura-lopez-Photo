@@ -1,27 +1,26 @@
-/* Estilos por defecto para dispositivos móviles */
 .container {
-  height: auto; /* Ajusta la altura automáticamente para móviles */
+  height: auto;
   display: flex;
-  flex-direction: column; /* Coloca el contenido en columna para móviles */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: url("https://images.unsplash.com/photo-1477089104253-0f745e68267f?q=80&w=1704&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   background-position: center;
-  background-attachment: scroll; /* Cambia a scroll para móviles */
-  border: none; /* Remueve el borde en móviles */
-  padding: 10px; /* Ajusta el padding para móviles */
+  background-attachment: scroll;
+  border: none;
+  padding: 10px;
   box-sizing: border-box;
   background-attachment: fixed;
 }
 
 .content {
-  border: none; /* Remueve el borde en móviles */
-  width: 100%; /* Ajusta el ancho para ocupar todo el contenedor */
+  border: none;
+  width: 100%;
   color: white;
 
   border-radius: 8px;
-  padding: 15px; /* Ajusta el padding para móviles */
+  padding: 15px;
 }
 
 .pre-content-wrap {
@@ -40,7 +39,7 @@
 
 .pre-content-text {
   font-family: var(--text-font-section);
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.6 !important;
   margin-bottom: 15px;
 }

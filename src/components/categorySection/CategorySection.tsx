@@ -54,6 +54,7 @@ export function CategorySection() {
           <Grid item xs={12} sm={4} key={category.path}>
             <Card className="card">
               <CardMedia
+                className="category-section-card_media"
                 component="img"
                 image={category.image}
                 alt={category.title}

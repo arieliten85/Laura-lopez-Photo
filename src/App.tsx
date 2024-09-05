@@ -9,6 +9,7 @@ import { SmashCakeSeccion } from "./views/sessionsViews/SmashCakeSeccion";
 import { BabySixMothsSeccion } from "./views/sessionsViews/BabySixMothsSeccion";
 import { NewBornSeccion } from "./views/sessionsViews/NewBornSeccion";
 import { MaternitySeccion } from "./views/sessionsViews/MaternitySeccion";
+import { FooterSection } from "./components/footerSection/FooterSection";
 
 function App() {
   return (
@@ -47,6 +48,8 @@ function App() {
         <Route path="/sesiones/recien-nacido" element={<div>Home</div>} />
         <Route path="/sesiones/maternidad/" element={<div>Home</div>} />
       </Routes>
+
+      <FooterSection />
     </>
   );
 }
