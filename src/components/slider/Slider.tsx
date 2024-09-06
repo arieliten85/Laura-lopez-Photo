@@ -19,7 +19,7 @@ export const Slider = ({ ImagesSlider }: SliderProps) => {
         {ImagesSlider.map((item, index) => (
           <SwiperSlide key={index} className="slider-swiper-slide">
             <div className="image-content">
-              <img src={item.img} alt={item.name} />
+              <img src={item.img} />
             </div>
           </SwiperSlide>
         ))}

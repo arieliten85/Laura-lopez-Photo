@@ -1,4 +1,4 @@
-.communion-content {
+.newBorn-content {
   background-color: var(--primary-bg-color);
   width: 100%;
   padding: 80px 20px;
@@ -8,7 +8,7 @@
   justify-content: center;
   gap: 30px;
 }
-.communion-title {
+.newBorn-title {
   padding-bottom: 30px;
   text-transform: uppercase;
   font-family: var(--text-font-secondary);
@@ -17,7 +17,15 @@
   text-align: center;
 }
 
-.communion-text {
+.newBorn-text-question {
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  font-family: var(--text-font-secondary);
+  font-size: 24px;
+  color: #877964;
+}
+
+.newBorn-text {
   font-size: 18px;
   font-family: var(--text-font-section);
   color: var(--color-grey-dark);
@@ -26,35 +34,30 @@
   line-height: 28px;
 }
 
-.communion-content-icon {
+.newBorn-content-icon {
   text-align: center;
 }
 
-.communion-firstSection-icon {
+.newBorn-firstSection-icon {
   max-width: 80px;
   margin: 20px auto;
 }
 
-.communion-firstSection-container,
-.communion-secondSection-container {
+.newBorn-firstSection-container {
   max-width: 1200px;
   width: 100%;
   padding: 0 20px;
 }
 
-.communion-secondSection-container .communion-title {
-  font-size: 30px;
-}
-
-.communion-gallery-container {
+.newBorn-gallery-container {
   padding: 20px;
 }
 
-.communion-gallery-card {
+.newBorn-gallery-card {
   margin: 10px;
 }
 
-.communion-gallery-card_media {
+.newBorn-gallery-card_media {
   height: 100%;
   box-shadow: none !important;
   object-fit: cover;

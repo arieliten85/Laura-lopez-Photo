@@ -10,12 +10,9 @@ import {
 } from "@mui/material";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
-interface CommunionImagesProps {
-  id: number;
-  image: string;
-}
+import { ImagesSeccionProps } from "../../../interfaces/imagesSecction";
+import { ContactSession } from "../../contactSession/ContactSession";
 
 export const CommunionContent = () => {
   return (
@@ -26,9 +23,7 @@ export const CommunionContent = () => {
       </div>
       <CommunionImagesGallery />
 
-      <div className="comunion-contact-container">
-        <CommunionContactSeccion />
-      </div>
+      <ContactSession />
     </>
   );
 };
@@ -87,7 +82,7 @@ const CommunionImagesGallery = () => {
   const [open, setOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  const categories: CommunionImagesProps[] = [
+  const categories: ImagesSeccionProps[] = [
     {
       id: 1,
       image:
@@ -174,23 +169,6 @@ const CommunionImagesGallery = () => {
           )}
         </DialogContent>
       </Dialog>
-    </>
-  );
-};
-
-const CommunionContactSeccion = () => {
-  return (
-    <>
-      <h1 className="communion-title">Reserva tu cita ahora</h1>
-      <p className="communion-text">
-        Puedes pedir cita para una sesión de comunión o bien contactar conmigo
-        para solicitar más informació
-      </p>
-      <Link to={"/contacto"}>
-        <button className="customButton comunion-contact-button">
-          Contatar
-        </button>
-      </Link>
     </>
   );
 };

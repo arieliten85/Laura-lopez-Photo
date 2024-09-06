@@ -6,7 +6,6 @@ export const CommunionSecction = () => {
   return (
     <>
       <Slider ImagesSlider={ImagesSliderComunion} />
-
       <CommunionContent />
     </>
   );

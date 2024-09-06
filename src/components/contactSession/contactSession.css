@@ -1,0 +1,33 @@
+.contact-session {
+  background-color: var(--primary-bg-color);
+  width: 100%;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 20px;
+  margin-bottom: 150px;
+}
+
+.contact-session-title {
+  text-transform: uppercase;
+  font-family: var(--text-font-secondary);
+  font-size: 24px;
+  color: #877964;
+  text-align: center;
+}
+
+.contact-session-text {
+  font-size: 18px;
+  font-family: var(--text-font-section);
+  color: var(--color-grey-dark);
+  text-align: justify;
+  padding: 10px;
+  line-height: 28px;
+}
+
+.contact-session-button {
+  margin-top: 50px;
+}

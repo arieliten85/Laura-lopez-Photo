@@ -74,6 +74,10 @@ body {
   cursor: pointer;
 }
 
+.customButton-secction {
+  margin-top: 50px;
+}
+
 .customButton:hover {
   background-color: var(--color-grey-dark);
 }
