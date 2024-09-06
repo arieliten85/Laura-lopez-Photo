@@ -1,6 +1,6 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import "./FormContact.css";
+import "./formContact.css";
 
 export const FormContact = () => {
   // Esquema de validación con Yup
