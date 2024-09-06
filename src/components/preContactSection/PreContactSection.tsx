@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 
 export const PreContactSection: React.FC = () => {
   return (
-    <div className="container">
-      <div className="content">
-        <div className="pre-content-wrap">
-          <h2 className="pre-content-title">¡Déjame contar tu historia!</h2>
-          <p className="pre-content-text">
+    <div className="preContactSection-container">
+      <div className="preContactSection-content">
+        <div className="preContactSection-preContentWrap">
+          <h2 className="preContactSection-preContentTitle">
+            ¡Déjame contar tu historia!
+          </h2>
+          <p className="preContactSection-preContentText">
             Si te has conectado con mi trabajo y sientes una afinidad con las
             imágenes que has visto, no esperes más para dar el siguiente paso.
             Estoy emocionada por la oportunidad de conocerte, escuchar tus
@@ -19,8 +21,10 @@ export const PreContactSection: React.FC = () => {
             descubrir cómo puedo transformar esos momentos en recuerdos que
             atesorarás para siempre!
           </p>
-          <Link to={"/contact"}>
-            <button className="customButton">contactar</button>
+          <Link to={"/contacto"}>
+            <button className="customButton preContactSection-button">
+              contactar
+            </button>
           </Link>
         </div>
       </div>

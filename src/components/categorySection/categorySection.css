@@ -1,22 +1,27 @@
-.category-section-container {
+.category-section {
   width: 100%;
   padding: 20px;
 }
 
-.category-section-card_media {
-  height: 100%;
-
-  box-shadow: none !important;
-  width: 100%;
-  object-fit: cover;
+.category-section__grid {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.card {
+.category-section__media {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: none !important;
+}
+
+.category-section__card {
   cursor: pointer;
   margin: 10px !important;
   box-shadow: none !important;
 }
-.css-2ulfj5-MuiTypography-root {
+
+.category-section__title {
   color: var(--primary-text-color);
   text-align: center;
   font-family: var(--text-font-secondary) !important;

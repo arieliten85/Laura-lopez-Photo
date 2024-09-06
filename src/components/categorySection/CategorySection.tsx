@@ -48,13 +48,13 @@ const categories = [
 
 export function CategorySection() {
   return (
-    <div className="category-section-container">
-      <Grid container spacing={1} className="category-container">
+    <div className="category-section">
+      <Grid container spacing={1} className="category-section__grid">
         {categories.map((category) => (
           <Grid item xs={12} sm={4} key={category.path}>
-            <Card className="card">
+            <Card className="category-section__card">
               <CardMedia
-                className="category-section-card_media"
+                className="category-section__media"
                 component="img"
                 image={category.image}
                 alt={category.title}
@@ -67,7 +67,7 @@ export function CategorySection() {
                 }}
               />
               <CardContent>
-                <Typography variant="h6" className="title">
+                <Typography variant="h6" className="category-section__title">
                   {category.title}
                 </Typography>
               </CardContent>

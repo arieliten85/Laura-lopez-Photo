@@ -6,12 +6,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   margin-top: 20px;
   margin-bottom: 150px;
 }
 
-.contact-session-title {
+.contact-session__title {
   text-transform: uppercase;
   font-family: var(--text-font-secondary);
   font-size: 24px;
@@ -19,7 +18,7 @@
   text-align: center;
 }
 
-.contact-session-text {
+.contact-session__text {
   font-size: 18px;
   font-family: var(--text-font-section);
   color: var(--color-grey-dark);
@@ -28,6 +27,6 @@
   line-height: 28px;
 }
 
-.contact-session-button {
+.contact-session__button {
   margin-top: 50px;
 }

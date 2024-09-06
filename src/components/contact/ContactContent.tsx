@@ -1,4 +1,4 @@
-import { FormContact } from "../formContact/FormContact";
+import { FormContact } from "../formulario/FormContact";
 import "./contact.css";
 
 export const ContactContent = () => {

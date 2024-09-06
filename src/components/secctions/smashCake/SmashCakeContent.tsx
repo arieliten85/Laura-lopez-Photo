@@ -123,8 +123,9 @@ const SmashCakeImagesGallery = () => {
             sx={{
               position: "absolute",
               top: 16,
-              right: 16,
+              right: 25,
               zIndex: 1300,
+              width: 50,
             }}
           >
             <AiOutlineClose size={24} color="#fff" />

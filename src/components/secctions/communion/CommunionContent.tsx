@@ -1,4 +1,5 @@
-import "../communion/communion.css";
+import React, { useState } from "react";
+import "./communion.css";
 import cameraIcon from "../../../assets/icono-camera.png";
 import {
   Grid,
@@ -9,12 +10,10 @@ import {
   IconButton,
 } from "@mui/material";
 import { AiOutlineClose } from "react-icons/ai";
-import { useState } from "react";
-
 import { ImagesSeccionProps } from "../../../interfaces/imagesSecction";
 import { ContactSession } from "../../contactSession/ContactSession";
 
-export const CommunionContent = () => {
+export const CommunionContent: React.FC = () => {
   return (
     <>
       <div className="communion-content">
@@ -22,13 +21,12 @@ export const CommunionContent = () => {
         <CommunionSecondSection />
       </div>
       <CommunionImagesGallery />
-
       <ContactSession />
     </>
   );
 };
 
-const CommunionFirstSection = () => {
+const CommunionFirstSection: React.FC = () => {
   return (
     <div className="communion-firstSection-container">
       <h1 className="communion-title">Fotógrafo de comuniones en Mendoza</h1>
@@ -47,7 +45,7 @@ const CommunionFirstSection = () => {
         servicio excepcional y fotografías de alta calidad que siempre
         recordarás con cariño.
       </p>
-      <div className="communion-content-icon">
+      <div className="communion-icon-container">
         <img
           className="communion-firstSection-icon"
           src={cameraIcon}
@@ -58,7 +56,7 @@ const CommunionFirstSection = () => {
   );
 };
 
-const CommunionSecondSection = () => {
+const CommunionSecondSection: React.FC = () => {
   return (
     <div className="communion-secondSection-container">
       <h1 className="communion-title">Descubre mi estilo</h1>
@@ -78,7 +76,7 @@ const CommunionSecondSection = () => {
   );
 };
 
-const CommunionImagesGallery = () => {
+const CommunionImagesGallery: React.FC = () => {
   const [open, setOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
@@ -145,7 +143,7 @@ const CommunionImagesGallery = () => {
       </div>
 
       <Dialog open={open} onClose={handleClose} fullWidth maxWidth="md">
-        <DialogContent className="MuiDialogContent-root">
+        <DialogContent className="communion-dialog-content">
           <IconButton
             edge="end"
             color="inherit"
@@ -154,8 +152,9 @@ const CommunionImagesGallery = () => {
             sx={{
               position: "absolute",
               top: 16,
-              right: 16,
+              right: 25,
               zIndex: 1300,
+              width: 50,
             }}
           >
             <AiOutlineClose size={24} color="#fff" />
@@ -164,7 +163,7 @@ const CommunionImagesGallery = () => {
             <img
               src={selectedImage}
               alt="Expanded"
-              className="expanded-image"
+              className="communion-expanded-image"
             />
           )}
         </DialogContent>

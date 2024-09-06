@@ -10,6 +10,7 @@ import {
   IconButton,
 } from "@mui/material";
 import { AiOutlineClose } from "react-icons/ai";
+import { Testimonials } from "../testimonialSection/TestimonialSection";
 
 export const WeddingContent = () => {
   return (
@@ -32,6 +33,8 @@ export const WeddingContent = () => {
       <WeddingSecondSection />
 
       <WeddingImagesGallery />
+
+      <Testimonials />
     </>
   );
 };
@@ -144,8 +147,9 @@ const WeddingImagesGallery = () => {
             sx={{
               position: "absolute",
               top: 16,
-              right: 16,
+              right: 25,
               zIndex: 1300,
+              width: 50,
             }}
           >
             <AiOutlineClose size={24} color="#fff" />

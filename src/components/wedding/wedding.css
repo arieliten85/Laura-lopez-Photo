@@ -1,4 +1,4 @@
-.wedding-content__first-section {
+.wedding-intro {
   background-color: var(--primary-bg-color);
   width: 100%;
   padding: 80px 20px;
@@ -9,7 +9,7 @@
   gap: 30px;
 }
 
-.wedding-content__title {
+.wedding-intro__title {
   text-transform: uppercase;
   font-family: var(--text-font-secondary);
   font-size: 12px;
@@ -17,7 +17,7 @@
   text-align: center;
 }
 
-.wedding-content__subtitle {
+.wedding-intro__subtitle {
   text-transform: uppercase;
   font-family: var(--text-font-secondary);
   font-size: 40px;
@@ -26,7 +26,7 @@
   text-align: center;
 }
 
-.wedding-content__description {
+.wedding-intro__description {
   font-size: 20px;
   font-family: var(--text-font-section);
   color: var(--color-grey-dark);
@@ -36,24 +36,25 @@
   width: 90%;
 }
 
-.wedding-content__second-section {
+.wedding-work {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   padding: 20px;
   margin-top: 70px;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
   border: 1px solid var(--color-border);
 }
 
-.wedding-content__second-section-title-container {
+.wedding-work__title-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 45%;
   border: 1px solid var(--color-border-title);
 }
 
-.wedding-content__second-section-title {
+.wedding-work__title {
   font-size: 50px;
   font-family: var(--text-font-section);
   color: var(--color-grey-dark);
@@ -64,7 +65,7 @@
   line-height: 50px;
 }
 
-.wedding-content__second-section-subtitle {
+.wedding-work__subtitle {
   font-size: 20px;
   font-family: var(--text-font-section);
   color: var(--color-grey);
@@ -72,22 +73,21 @@
   padding: 20px;
 }
 
-.wedding-content__second-section-text-container {
-  width: 50%;
+.wedding-work__text-container {
+  width: 45%;
   border: 1px solid var(--color-border-text);
   padding: 10px;
 }
 
-.wedding-content__second-section-description {
+.wedding-work__description {
   font-size: 20px;
   font-family: var(--text-font-section);
   color: var(--color-grey-dark);
   text-align: left;
-
   line-height: 28px;
 }
 
-.wedding-content__button {
+.custom-button {
   font-size: 18px;
   font-family: var(--text-font-secondary);
   background-color: var(--primary-bg-color);
@@ -99,6 +99,29 @@
   transition: background-color 0.3s;
 }
 
-.wedding-content__button:hover {
+.custom-button:hover {
   background-color: var(--hover-bg-color);
+}
+
+.gallery-container {
+  padding: 20px;
+}
+
+.gallery-card {
+  cursor: pointer;
+}
+
+.gallery-card__media {
+  width: 100%;
+  height: auto;
+}
+
+.dialog-content {
+  position: relative;
+  padding: 0;
+}
+
+.expanded-image {
+  width: 100%;
+  height: auto;
 }

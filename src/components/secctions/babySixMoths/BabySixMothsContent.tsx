@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./babySixMoths.css";
 import {
   Grid,
@@ -8,31 +9,29 @@ import {
   IconButton,
 } from "@mui/material";
 import { AiOutlineClose } from "react-icons/ai";
-import { useState } from "react";
-
 import { ImagesSeccionProps } from "../../../interfaces/imagesSecction";
 import { ContactSession } from "../../contactSession/ContactSession";
 
-export const BabySixMothsContent = () => {
+export const BabySixMothsContent: React.FC = () => {
   return (
     <>
-      <div className="sixMothns-content">
-        <SixMothnsFirstSection />
+      <div className="babySixMoths-container">
+        <SixMothsFirstSection />
       </div>
-      <SixMothnsImagesGallery />
+      <SixMothsImagesGallery />
 
       <ContactSession />
     </>
   );
 };
 
-const SixMothnsFirstSection = () => {
+const SixMothsFirstSection: React.FC = () => {
   return (
-    <div className="sixMothns-firstSection-container">
-      <h1 className="sixMothns-title">
+    <div className="babySixMoths-firstSection-container">
+      <h1 className="babySixMoths-title">
         Sesiones de bebé de 6 a 9 meses en estudio
       </h1>
-      <p className="sixMothns-text">
+      <p className="babySixMoths-text">
         Lo más esencial para estas sesiones de bebés de 6 a 9 meses en estudio
         es que ya se mantengan sentados por sí mismos, pero que aún no estén
         gateando, ¡así evitamos que se escapen del escenario! Este tipo de
@@ -51,7 +50,7 @@ const SixMothnsFirstSection = () => {
   );
 };
 
-const SixMothnsImagesGallery = () => {
+const SixMothsImagesGallery: React.FC = () => {
   const [open, setOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
@@ -100,13 +99,13 @@ const SixMothnsImagesGallery = () => {
 
   return (
     <>
-      <div className="sixMothns-gallery-container">
+      <div className="babySixMoths-gallery-container">
         <Grid container spacing={2}>
           {categories.map((category) => (
             <Grid item xs={12} sm={4} key={category.id}>
-              <Card className="sixMothns-gallery-card">
+              <Card className="babySixMoths-gallery-card">
                 <CardMedia
-                  className="sixMothns-gallery-card_media"
+                  className="babySixMoths-gallery-card_media"
                   component="img"
                   image={category.image}
                   onClick={() => handleClickOpen(category.image)}
@@ -118,7 +117,7 @@ const SixMothnsImagesGallery = () => {
       </div>
 
       <Dialog open={open} onClose={handleClose} fullWidth maxWidth="md">
-        <DialogContent className="MuiDialogContent-root">
+        <DialogContent className="babySixMoths-dialog-content">
           <IconButton
             edge="end"
             color="inherit"
@@ -127,8 +126,9 @@ const SixMothnsImagesGallery = () => {
             sx={{
               position: "absolute",
               top: 16,
-              right: 16,
+              right: 25,
               zIndex: 1300,
+              width: 50,
             }}
           >
             <AiOutlineClose size={24} color="#fff" />
@@ -137,7 +137,7 @@ const SixMothnsImagesGallery = () => {
             <img
               src={selectedImage}
               alt="Expanded"
-              className="expanded-image"
+              className="babySixMoths-expanded-image"
             />
           )}
         </DialogContent>
