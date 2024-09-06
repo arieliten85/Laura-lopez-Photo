@@ -2,7 +2,6 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Navigation } from "./components/navegation/Navegation";
 import { Home } from "./views/Home";
-import { About } from "./views/About";
 import { CommunionSecction } from "./views/sessionsViews/CommunionSecction";
 import { FamilySeccion } from "./views/sessionsViews/FamilySeccion";
 import { SmashCakeSeccion } from "./views/sessionsViews/SmashCakeSeccion";
@@ -10,6 +9,8 @@ import { BabySixMothsSeccion } from "./views/sessionsViews/BabySixMothsSeccion";
 import { NewBornSeccion } from "./views/sessionsViews/NewBornSeccion";
 import { MaternitySeccion } from "./views/sessionsViews/MaternitySeccion";
 import { FooterSection } from "./components/footerSection/FooterSection";
+import { Wedding } from "./views/Wedding";
+import { Contact } from "./views/Contact";
 
 function App() {
   return (
@@ -19,9 +20,9 @@ function App() {
       <Routes>
         {/* Menu principal */}
         <Route path="/" element={<Home />} />
-        <Route path="/bodas" element={<h1>Bodas</h1>} />
-        <Route path="/sobre-mi" element={<About />} />
-        <Route path="/contacto" element={<h1>Contacto</h1>} />
+        <Route path="/bodas" element={<Wedding />} />
+
+        <Route path="/contacto" element={<Contact />} />
         {/* Sub-menu */}
         <Route path="/sesiones/comunion/" element={<CommunionSecction />} />
         <Route

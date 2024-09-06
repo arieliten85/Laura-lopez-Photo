@@ -38,16 +38,13 @@ export const Navigation = () => {
           type="checkbox"
           id="show-menu"
           checked={showMenu}
-          onChange={toggleMenu} // Use toggleMenu to handle menu visibility
+          onChange={toggleMenu}
           style={{ display: "none" }}
         />
 
         <div className="nav-content">
           <div className="logo">
-            <Link
-              to="/"
-              onClick={closeMenu} // Close menu on click
-            >
+            <Link to="/" onClick={closeMenu}>
               <img src={camera} alt="Logo" />
               <p> Laura Lopez</p>
             </Link>
@@ -58,7 +55,7 @@ export const Navigation = () => {
               <Link
                 to="/"
                 className={isActiveLink("/") ? "activeLink" : "link"}
-                onClick={closeMenu} // Close menu on click
+                onClick={closeMenu}
               >
                 Inicio
               </Link>
@@ -182,15 +179,7 @@ export const Navigation = () => {
                 Bodas
               </Link>
             </li>
-            <li>
-              <Link
-                to="/sobre-mi"
-                className={isActiveLink("/sobre-mi") ? "activeLink" : "link"}
-                onClick={closeMenu} // Close menu on click
-              >
-                Sobre mí
-              </Link>
-            </li>
+
             <li>
               <Link
                 to="/contacto"
