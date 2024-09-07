@@ -1,16 +1,15 @@
-import "./gallerySection.css";
-
-export const GalerySection = () => {
+import "./workPresentation.css";
+export const WorkPresentation = () => {
   return (
     <div className="galerySection-container">
-      <div className="galerySection-container__text">
+      <div className="content-text">
         <h1>Mi trabajo, tus recuerdos</h1>
         <h2>
           Te invito a guardar los mejores recuerdos de tu familia, el mejor
           regalo que te puedes hacer a ti mismo y a los tuyos.
         </h2>
       </div>
-      <div className="galerySection-container__data">
+      <div className="content-data">
         <p>
           La fotografía es una forma de capturar los recuerdos de las diferentes
           etapas de la vida. Desde la infancia hasta la vejez, las fotografías
@@ -21,7 +20,7 @@ export const GalerySection = () => {
           maravillosa de preservar los recuerdos y conectarnos con nuestro
           pasado.
         </p>
-        <button className="customButton galerySection-container__data-button">
+        <button className="customButton content-data-button">
           Imagenes que identifican mi estilo
         </button>
       </div>
