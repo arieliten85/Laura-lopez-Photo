@@ -1,11 +1,14 @@
-import { ImagesSliderComunion } from "../../apis/ApiSliders";
 import { Slider } from "../../components/slider/Slider";
 import { CommunionContent } from "../../components/secctions/communion/CommunionContent";
+import { ImagesHeadLineSlider } from "../../apis/ImagesHeadLineSlider";
 
 export const CommunionSecction = () => {
   return (
     <>
-      <Slider ImagesSlider={ImagesSliderComunion} />
+      <Slider
+        ImagesHeadLineSlider={ImagesHeadLineSlider}
+        filterName="communion"
+      />
       <CommunionContent />
     </>
   );

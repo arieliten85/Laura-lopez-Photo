@@ -25,20 +25,10 @@ function App() {
         <Route path="/contacto" element={<Contact />} />
         {/* Sub-menu */}
         <Route path="/sesiones/comunion/" element={<CommunionSecction />} />
+        <Route path="/sesiones/familia/" element={<FamilySeccion />} />
+        <Route path="/sesiones/smashcake/" element={<SmashCakeSeccion />} />
         <Route
-          path="/sesiones/sesion-de-fotos-de-familia/"
-          element={<FamilySeccion />}
-        />
-        <Route
-          path="/sesiones/sesiones-de-smash-cake/"
-          element={<SmashCakeSeccion />}
-        />
-        <Route
-          path="/sesiones/sesiones-de-bebe-de-6-meses/"
-          element={<BabySixMothsSeccion />}
-        />
-        <Route
-          path="/sesiones/sesiones-de-bebe-de-6-meses/"
+          path="/sesiones/bebe-de-6-meses/"
           element={<BabySixMothsSeccion />}
         />
 

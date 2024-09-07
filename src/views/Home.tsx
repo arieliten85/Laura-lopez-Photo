@@ -4,13 +4,14 @@ import { CategorySection } from "../components/categorySection/CategorySection";
 import { GalerySection } from "../components/gallerySection/GallerySection";
 import { PreContactSection } from "../components/preContactSection/PreContactSection";
 import { Testimonials } from "../components/testimonialSection/TestimonialSection";
-import { ImagesSliderHome } from "../apis/ApiSliders";
+
 import { Slider } from "../components/slider/Slider";
+import { ImagesHeadLineSlider } from "../apis/ImagesHeadLineSlider";
 
 export const Home = () => {
   return (
     <>
-      <Slider ImagesSlider={ImagesSliderHome} />
+      <Slider ImagesHeadLineSlider={ImagesHeadLineSlider} filterName="home" />
       <AboutSection />
       <GalerySection />
       <CategorySection />

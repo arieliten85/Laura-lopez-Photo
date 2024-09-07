@@ -5,24 +5,28 @@ import "swiper/css/pagination";
 import "./slider.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { ImagesSliderProps } from "../../apis/ApiSliders";
+
 import { SwiperConfigSlider } from "../../config/swipe/swipeConfig";
+import { HeadlineSliderProps } from "../../apis/ImagesHeadLineSlider";
 
 interface SliderProps {
-  ImagesSlider: ImagesSliderProps[];
+  ImagesHeadLineSlider: HeadlineSliderProps[];
+  filterName?: string;
 }
 
-export const Slider = ({ ImagesSlider }: SliderProps) => {
+export const Slider = ({ ImagesHeadLineSlider, filterName }: SliderProps) => {
   return (
     <div className="slider-container">
       <Swiper {...SwiperConfigSlider}>
-        {ImagesSlider.map((item, index) => (
-          <SwiperSlide key={index} className="slider-swiper-slide">
-            <div className="image-content">
-              <img src={item.img} />
-            </div>
-          </SwiperSlide>
-        ))}
+        {ImagesHeadLineSlider.filter((item) => item.section === filterName).map(
+          (item, index) => (
+            <SwiperSlide key={index} className="slider-swiper-slide">
+              <div className="image-content">
+                <img src={item.img} />
+              </div>
+            </SwiperSlide>
+          )
+        )}
       </Swiper>
     </div>
   );

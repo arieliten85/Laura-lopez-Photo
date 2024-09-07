@@ -105,11 +105,9 @@ export const Navigation = () => {
                 </li>
                 <li>
                   <Link
-                    to="/sesiones/sesion-de-fotos-de-familia/"
+                    to="sesiones/familia/"
                     className={
-                      isActiveLink("/sesiones/sesion-de-fotos-de-familia/")
-                        ? "activeLink"
-                        : "link"
+                      isActiveLink("sesiones/familia/") ? "activeLink" : "link"
                     }
                     onClick={closeMenu} // Close menu on click
                   >
@@ -118,9 +116,9 @@ export const Navigation = () => {
                 </li>
                 <li>
                   <Link
-                    to="/sesiones/sesiones-de-smash-cake/"
+                    to="/sesiones/smashcake/"
                     className={
-                      isActiveLink("/sesiones/sesiones-de-smash-cake/")
+                      isActiveLink("/sesiones/smashcake/")
                         ? "activeLink"
                         : "link"
                     }
@@ -131,9 +129,9 @@ export const Navigation = () => {
                 </li>
                 <li>
                   <Link
-                    to="/sesiones/sesiones-de-bebe-de-6-meses/"
+                    to="/sesiones/bebe-de-6-meses/"
                     className={
-                      isActiveLink("/sesiones/sesiones-de-bebe-de-6-meses/")
+                      isActiveLink("/sesiones/bebe-de-6-meses/")
                         ? "activeLink"
                         : "link"
                     }

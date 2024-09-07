@@ -1,11 +1,14 @@
-import { ImagesSliderMaternitySeccion } from "../../apis/ApiSliders";
+import { ImagesHeadLineSlider } from "../../apis/ImagesHeadLineSlider";
 import { MaternityContent } from "../../components/secctions/maternity/MaternityContent";
 import { Slider } from "../../components/slider/Slider";
 
 export const MaternitySeccion = () => {
   return (
     <>
-      <Slider ImagesSlider={ImagesSliderMaternitySeccion} />
+      <Slider
+        ImagesHeadLineSlider={ImagesHeadLineSlider}
+        filterName="maternity"
+      />
       <MaternityContent />
     </>
   );

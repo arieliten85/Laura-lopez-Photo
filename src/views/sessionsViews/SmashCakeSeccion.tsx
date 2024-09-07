@@ -1,11 +1,14 @@
-import { ImagesSliderSmashCakeSeccion } from "../../apis/ApiSliders";
+import { ImagesHeadLineSlider } from "../../apis/ImagesHeadLineSlider";
 import { SmashCakeContent } from "../../components/secctions/smashCake/SmashCakeContent";
 import { Slider } from "../../components/slider/Slider";
 
 export const SmashCakeSeccion = () => {
   return (
     <>
-      <Slider ImagesSlider={ImagesSliderSmashCakeSeccion} />
+      <Slider
+        ImagesHeadLineSlider={ImagesHeadLineSlider}
+        filterName="smashCake"
+      />
       <SmashCakeContent />
     </>
   );
