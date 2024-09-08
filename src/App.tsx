@@ -21,23 +21,18 @@ function App() {
         {/* Menu principal */}
         <Route path="/" element={<Home />} />
         <Route path="/bodas" element={<Wedding />} />
-
         <Route path="/contacto" element={<Contact />} />
+
         {/* Sub-menu */}
-        <Route path="/sesiones/comunion/" element={<CommunionSecction />} />
-        <Route path="/sesiones/familia/" element={<FamilySeccion />} />
-        <Route path="/sesiones/smashcake/" element={<SmashCakeSeccion />} />
+        <Route path="/sesiones/comunion" element={<CommunionSecction />} />
+        <Route path="/sesiones/familia" element={<FamilySeccion />} />
+        <Route path="/sesiones/smashcake" element={<SmashCakeSeccion />} />
         <Route
-          path="/sesiones/bebe-de-6-meses/"
+          path="/sesiones/bebe-de-6-meses"
           element={<BabySixMothsSeccion />}
         />
-
-        <Route path="/sesiones/recien-nacido/" element={<NewBornSeccion />} />
-
-        <Route path="/sesiones/maternidad/" element={<MaternitySeccion />} />
-
-        <Route path="/sesiones/recien-nacido" element={<div>Home</div>} />
-        <Route path="/sesiones/maternidad/" element={<div>Home</div>} />
+        <Route path="/sesiones/recien-nacido" element={<NewBornSeccion />} />
+        <Route path="/sesiones/maternidad" element={<MaternitySeccion />} />
       </Routes>
 
       <FooterSection />
