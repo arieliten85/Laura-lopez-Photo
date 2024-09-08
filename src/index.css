@@ -59,6 +59,10 @@ body {
   overflow-x: hidden !important;
 }
 
+.MuiCard-root {
+  cursor: pointer !important;
+}
+
 .swiper-slide {
   padding: 0 !important;
   min-height: auto;
