@@ -20,7 +20,6 @@ export const ImageCategoryFilter = ({
   const [open, setOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  // Filtrar las imágenes según la categoría seleccionada
   const filteredImages = fetchImagesSession.filter(
     (image) => image.category === categoryName
   );
