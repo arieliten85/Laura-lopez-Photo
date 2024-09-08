@@ -107,7 +107,7 @@ export const Navigation = () => {
                   <Link
                     to="sesiones/familia/"
                     className={
-                      isActiveLink("sesiones/familia/") ? "activeLink" : "link"
+                      isActiveLink("/sesiones/familia/") ? "activeLink" : "link"
                     }
                     onClick={closeMenu} // Close menu on click
                   >
@@ -144,7 +144,7 @@ export const Navigation = () => {
                   <Link
                     to="/sesiones/recien-nacido"
                     className={
-                      isActiveLink("/sesiones/recien-nacido")
+                      isActiveLink("/sesiones/recien-nacido/")
                         ? "activeLink"
                         : "link"
                     }

@@ -1,5 +1,6 @@
 import { Grid, Card, CardMedia, CardContent, Typography } from "@mui/material";
 import "./categorySection.css";
+import { Link } from "react-router-dom";
 
 const categories = [
   {
@@ -52,26 +53,25 @@ export function CategorySection() {
       <Grid container spacing={1} className="category-section__grid">
         {categories.map((category) => (
           <Grid item xs={12} sm={4} key={category.path}>
-            <Card className="category-section__card">
-              <CardMedia
-                className="category-section__media"
-                component="img"
-                image={category.image}
-                alt={category.title}
-                onClick={() =>
-                  (window.location.href = `${category.path.toLowerCase()}`)
-                }
-                sx={{
-                  objectFit: "cover",
-                  width: "100%",
-                }}
-              />
-              <CardContent>
-                <Typography variant="h6" className="category-section__title">
-                  {category.title}
-                </Typography>
-              </CardContent>
-            </Card>
+            <Link to={category.path.toLowerCase()}>
+              <Card className="category-section__card">
+                <CardMedia
+                  className="category-section__media"
+                  component="img"
+                  image={category.image}
+                  alt={category.title}
+                  sx={{
+                    objectFit: "cover",
+                    width: "100%",
+                  }}
+                />
+                <CardContent>
+                  <Typography variant="h6" className="category-section__title">
+                    {category.title}
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Link>
           </Grid>
         ))}
       </Grid>
