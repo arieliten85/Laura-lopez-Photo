@@ -53,6 +53,7 @@ export const Navigation = () => {
           <ul className="links">
             <li>
               <Link
+                data-test="nav-link-home"
                 to="/"
                 className={isActiveLink("/") ? "activeLink" : "link"}
                 onClick={closeMenu}
@@ -62,6 +63,7 @@ export const Navigation = () => {
             </li>
             <li>
               <a
+                data-test="nav-link-sessions-pc"
                 className={
                   location.pathname.includes("sesiones")
                     ? "activeLink desktop-link"
@@ -74,10 +76,11 @@ export const Navigation = () => {
                 type="checkbox"
                 id="show-services"
                 checked={showServices}
-                onChange={toggleServices} // Toggle submenu on change
+                onChange={toggleServices}
                 style={{ display: "none" }}
               />
               <label
+                data-test="nav-link-sessions-mobile"
                 className={
                   location.pathname.includes("sesiones")
                     ? "activeLink linkLabel"
@@ -92,76 +95,82 @@ export const Navigation = () => {
               <ul className={showServices ? "show" : ""}>
                 <li>
                   <Link
+                    data-test="submenu-link-comunion"
                     to="/sesiones/comunion/"
                     className={
                       isActiveLink("/sesiones/comunion/")
                         ? "activeLink"
                         : "link"
                     }
-                    onClick={closeMenu} // Close menu on click
+                    onClick={closeMenu}
                   >
                     comunión
                   </Link>
                 </li>
                 <li>
                   <Link
+                    data-test="submenu-link-familia"
                     to="sesiones/familia/"
                     className={
                       isActiveLink("/sesiones/familia/") ? "activeLink" : "link"
                     }
-                    onClick={closeMenu} // Close menu on click
+                    onClick={closeMenu}
                   >
                     sesiones de fotos de familia
                   </Link>
                 </li>
                 <li>
                   <Link
+                    data-test="submenu-link-smashcake"
                     to="/sesiones/smashcake/"
                     className={
                       isActiveLink("/sesiones/smashcake/")
                         ? "activeLink"
                         : "link"
                     }
-                    onClick={closeMenu} // Close menu on click
+                    onClick={closeMenu}
                   >
                     sesiones de smash cake
                   </Link>
                 </li>
                 <li>
                   <Link
+                    data-test="submenu-link-bebe"
                     to="/sesiones/bebe-de-6-meses/"
                     className={
                       isActiveLink("/sesiones/bebe-de-6-meses/")
                         ? "activeLink"
                         : "link"
                     }
-                    onClick={closeMenu} // Close menu on click
+                    onClick={closeMenu}
                   >
                     sesiones de bebe de 6 meses
                   </Link>
                 </li>
                 <li>
                   <Link
+                    data-test="submenu-link-recien-nacido"
                     to="/sesiones/recien-nacido"
                     className={
                       isActiveLink("/sesiones/recien-nacido/")
                         ? "activeLink"
                         : "link"
                     }
-                    onClick={closeMenu} // Close menu on click
+                    onClick={closeMenu}
                   >
                     recién nacidos
                   </Link>
                 </li>
                 <li>
                   <Link
+                    data-test="submenu-link-maternidad"
                     to="/sesiones/maternidad/"
                     className={
                       isActiveLink("/sesiones/maternidad/")
                         ? "activeLink"
                         : "link"
                     }
-                    onClick={closeMenu} // Close menu on click
+                    onClick={closeMenu}
                   >
                     maternidad
                   </Link>
@@ -170,19 +179,20 @@ export const Navigation = () => {
             </li>
             <li>
               <Link
+                data-test="nav-link-bodas"
                 to="/bodas"
                 className={isActiveLink("/bodas") ? "activeLink" : "link"}
-                onClick={closeMenu} // Close menu on click
+                onClick={closeMenu}
               >
                 Bodas
               </Link>
             </li>
-
             <li>
               <Link
+                data-test="nav-link-contacto"
                 to="/contacto"
                 className={isActiveLink("/contacto") ? "activeLink" : "link"}
-                onClick={closeMenu} // Close menu on click
+                onClick={closeMenu}
               >
                 Contacto
               </Link>
@@ -190,12 +200,17 @@ export const Navigation = () => {
           </ul>
         </div>
 
-        <label htmlFor="show-menu" className="menu-icon">
+        <label
+          htmlFor="show-menu"
+          className="menu-icon"
+          data-test="toggel-menu"
+        >
           {!showMenu ? <FaBars /> : <IoCloseSharp />}
         </label>
 
         <div
           onClick={closeMenu}
+          data-test="close-menu"
           className={`overlay ${showMenu ? "active" : ""}`}
         />
       </nav>
