@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Ejecutar lint-staged para linting
+npx lint-staged
+
+# Ejecutar tests de Cypress
+npm run test:cypress
