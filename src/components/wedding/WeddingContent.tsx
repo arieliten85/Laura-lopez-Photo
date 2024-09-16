@@ -3,6 +3,7 @@ import "../workPresentation/workPresentation.css";
 import { Testimonials } from "../testimonialSection/TestimonialSection";
 import { ImageCategoryFilter } from "../../utilities/ImageCategoryFilter";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const WeddingContent: React.FC = () => {
   return (
@@ -53,9 +54,11 @@ const WorkPresentation = () => {
           descubrir si mi estilo como fotógrafa de bodas resuena con tus deseos
           y emocione
         </p>
-        <button className="customButton content-data-button">
-          Imagenes que identifican mi estilo
-        </button>
+        <Link to={"/gallery"}>
+          <button className="customButton content-data-button">
+            Imagenes que identifican mi estilo
+          </button>
+        </Link>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import {
   FaWhatsapp,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+
 import "./footerSection.css";
 
 export const FooterSection: React.FC = () => {
@@ -15,24 +15,44 @@ export const FooterSection: React.FC = () => {
         <div className="footer__column">
           <h3 className="footer__heading">Redes</h3>
           <div className="footer__social">
-            <Link to="/instagram" className="footer__social-link">
+            <a
+              href="https://www.instagram.com/"
+              className="footer__social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaInstagram className="footer__social-icon" />
-            </Link>
-            <Link to="/facebook" className="footer__social-link">
+            </a>
+            <a
+              href="https://www.facebook.com/"
+              className="footer__social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaFacebookF className="footer__social-icon" />
-            </Link>
-            <Link to="/whatsapp" className="footer__social-link">
+            </a>
+            <a
+              href="https://wa.me/54988888888"
+              className="footer__social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaWhatsapp className="footer__social-icon" />
-            </Link>
+            </a>
           </div>
         </div>
         <div className="footer__column">
           <h3 className="footer__heading">Accesibilidad</h3>
           <ul className="footer__list">
             <li className="footer__item">
-              <Link to="/mapa-del-sitio" className="footer__list-link">
+              <a
+                href="https://www.google.com/maps/@-32.8832975,-68.8791187,14z?hl=es&entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D"
+                className="footer__social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Mapa del sitio <FaMapMarkerAlt className="footer__icon" />
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
@@ -46,7 +66,7 @@ export const FooterSection: React.FC = () => {
       </div>
       <div className="footer__bottom">
         <p className="footer__copy-text">
-          Copyright © 2024. Todos los derechos reservados. creado por AriDev
+          Copyright © 2024. Todos los derechos reservados. Creado por AriDev
         </p>
       </div>
     </footer>

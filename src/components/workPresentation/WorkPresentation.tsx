@@ -1,5 +1,6 @@
 import React from "react";
 import "./workPresentation.css";
+import { Link } from "react-router-dom";
 export const WorkPresentation: React.FC = () => {
   return (
     <div className="galerySection-container">
@@ -21,9 +22,11 @@ export const WorkPresentation: React.FC = () => {
           maravillosa de preservar los recuerdos y conectarnos con nuestro
           pasado.
         </p>
-        <button className="customButton content-data-button">
-          Imagenes que identifican mi estilo
-        </button>
+        <Link to={"/gallery"}>
+          <button className="customButton content-data-button">
+            Imagenes que identifican mi estilo
+          </button>
+        </Link>
       </div>
     </div>
   );

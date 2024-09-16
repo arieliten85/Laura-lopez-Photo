@@ -96,3 +96,17 @@ h2 {
   font-weight: 200;
   font-family: var(--text-font-regular);
 }
+
+/* GALLERY */
+
+.gallery-title {
+  color: var(--primary-text-color);
+  font-size: 10vmin;
+  text-align: center;
+
+  margin-top: 100px;
+
+  font-family: "Zeyada", cursive;
+  font-weight: 400;
+  font-style: normal;
+}

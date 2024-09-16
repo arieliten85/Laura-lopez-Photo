@@ -12,6 +12,7 @@ import { MaternitySeccion } from "./views/sessionsViews/MaternitySeccion";
 import { FooterSection } from "./components/footerSection/FooterSection";
 import { Wedding } from "./views/Wedding";
 import { Contact } from "./views/Contact";
+import { Gallery } from "./components/gallery/Gallery";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/bodas" element={<Wedding />} />
         <Route path="/contacto" element={<Contact />} />
+        <Route path="/gallery" element={<Gallery />} />
 
         {/* Sub-menu */}
         <Route path="/sesiones/comunion" element={<CommunionSecction />} />
