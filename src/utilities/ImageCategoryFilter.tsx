@@ -28,7 +28,6 @@ export const ImageCategoryFilter: React.FC<ImageCategoryFilterProps> = ({
   const [open, setOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [filteredImages, setFilteredImages] = useState<any[]>([]);
-  const HOST_URL = import.meta.env.VITE_HOST_URL;
 
   useEffect(() => {
     const fetchImages = async () => {
@@ -36,12 +35,10 @@ export const ImageCategoryFilter: React.FC<ImageCategoryFilterProps> = ({
         const response = await axiosInstance.get("/api/images");
         const images = response.data;
 
-        // Filtra imágenes según la categoría
         const filtered = images.filter(
           (image: ImageProps) => image.Category.name === categoryName
         );
 
-        console.log("FETCH", filtered);
         setFilteredImages(filtered);
       } catch (error) {
         console.error("Error fetching images:", error);
@@ -60,8 +57,6 @@ export const ImageCategoryFilter: React.FC<ImageCategoryFilterProps> = ({
     setOpen(false);
     setSelectedImage(null);
   };
-
-  console.log("select", selectedImage);
 
   return (
     <>
