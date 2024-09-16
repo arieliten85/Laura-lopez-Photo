@@ -29,6 +29,8 @@ export const ImageCategoryFilter: React.FC<ImageCategoryFilterProps> = ({
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [filteredImages, setFilteredImages] = useState<any[]>([]);
 
+  const URL_BACK = import.meta.env.VITE_HOST_URL_BACK;
+
   useEffect(() => {
     const fetchImages = async () => {
       try {
@@ -68,7 +70,7 @@ export const ImageCategoryFilter: React.FC<ImageCategoryFilterProps> = ({
                 <CardMedia
                   className="smashCake-gallery-card_media"
                   component="img"
-                  image={"http://localhost:8080/uploads/" + image.img}
+                  image={`${URL_BACK}/uploads/${image.img}`}
                   onClick={() => handleClickOpen(image.img)}
                 />
               </Card>
@@ -96,7 +98,7 @@ export const ImageCategoryFilter: React.FC<ImageCategoryFilterProps> = ({
           </IconButton>
           {selectedImage && (
             <img
-              src={"http://localhost:8080/uploads/" + selectedImage}
+              src={`${URL_BACK}/uploads/${selectedImage}`}
               alt="Expanded"
               className="expanded-image"
             />

@@ -31,10 +31,20 @@ export const FormContact: React.FC = () => {
       }}
     >
       {() => (
-        <Form className="form-contact">
+        <Form className="form-contact" data-test="form-contact">
           <div className="campo">
-            <Field name="nombre" type="text" placeholder="Nombre" />
-            <ErrorMessage name="nombre" component="div" className="error" />
+            <Field
+              name="nombre"
+              type="text"
+              placeholder="Nombre"
+              data-test="field-nombre"
+            />
+            <ErrorMessage
+              name="nombre"
+              component="div"
+              className="error"
+              data-test="error-nombre"
+            />
           </div>
 
           <div className="campo">
@@ -42,13 +52,29 @@ export const FormContact: React.FC = () => {
               name="correo"
               type="email"
               placeholder="Correo Electrónico"
+              data-test="field-correo"
             />
-            <ErrorMessage name="correo" component="div" className="error" />
+            <ErrorMessage
+              name="correo"
+              component="div"
+              className="error"
+              data-test="error-correo"
+            />
           </div>
 
           <div className="campo">
-            <Field name="telefono" type="tel" placeholder="Teléfono" />
-            <ErrorMessage name="telefono" component="div" className="error" />
+            <Field
+              name="telefono"
+              type="tel"
+              placeholder="Teléfono"
+              data-test="field-telefono"
+            />
+            <ErrorMessage
+              name="telefono"
+              component="div"
+              className="error"
+              data-test="error-telefono"
+            />
           </div>
 
           <div className="campo">
@@ -57,11 +83,21 @@ export const FormContact: React.FC = () => {
               as="textarea"
               rows="4"
               placeholder="Mensaje"
+              data-test="field-mensaje"
             />
-            <ErrorMessage name="mensaje" component="div" className="error" />
+            <ErrorMessage
+              name="mensaje"
+              component="div"
+              className="error"
+              data-test="error-mensaje"
+            />
           </div>
 
-          <button type="submit" className="customButton contact-session-button">
+          <button
+            type="submit"
+            className="customButton contact-session-button"
+            data-test="submit-button"
+          >
             Enviar
           </button>
         </Form>
