@@ -8,8 +8,7 @@ import {
   IconButton,
 } from "@mui/material";
 import { AiOutlineClose } from "react-icons/ai";
-
-import axios from "axios";
+import axiosInstance from "../apis/config/axiosConfig";
 
 interface ImageCategoryFilterProps {
   categoryName: string;
@@ -34,7 +33,7 @@ export const ImageCategoryFilter: React.FC<ImageCategoryFilterProps> = ({
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const response = await axios.get(`${HOST_URL}/api/images`);
+        const response = await axiosInstance.get("/api/images");
         const images = response.data;
 
         // Filtra imágenes según la categoría
