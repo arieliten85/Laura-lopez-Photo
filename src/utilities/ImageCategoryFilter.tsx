@@ -8,7 +8,7 @@ import {
   IconButton,
 } from "@mui/material";
 import { AiOutlineClose } from "react-icons/ai";
-import { fetchImagesSession } from "../apis/fetchImagesSession";
+
 import axios from "axios";
 
 interface ImageCategoryFilterProps {
@@ -29,11 +29,12 @@ export const ImageCategoryFilter: React.FC<ImageCategoryFilterProps> = ({
   const [open, setOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [filteredImages, setFilteredImages] = useState<any[]>([]);
+  const HOST_URL = import.meta.env.VITE_HOST_URL;
 
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/api/images/");
+        const response = await axios.get(`${HOST_URL}/api/images`);
         const images = response.data;
 
         // Filtra imágenes según la categoría
