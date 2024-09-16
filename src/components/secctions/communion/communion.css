@@ -1,7 +1,7 @@
 .communion-content {
   background-color: var(--primary-bg-color);
   width: 100%;
-  padding: 80px 20px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,6 +41,9 @@
   max-width: 1200px;
   width: 100%;
   padding: 0 20px;
+
+  margin: 0 auto;
+  padding: var(--spacing-80) 0;
 }
 
 .communion-secondSection-container .communion-title {

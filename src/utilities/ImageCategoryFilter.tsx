@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Grid,
   Card,
@@ -9,9 +9,18 @@ import {
 } from "@mui/material";
 import { AiOutlineClose } from "react-icons/ai";
 import { fetchImagesSession } from "../apis/fetchImagesSession";
+import axios from "axios";
 
 interface ImageCategoryFilterProps {
   categoryName: string;
+}
+
+interface ImageProps {
+  id: number;
+  img: string;
+  Category: {
+    name: string;
+  };
 }
 
 export const ImageCategoryFilter: React.FC<ImageCategoryFilterProps> = ({
@@ -19,10 +28,28 @@ export const ImageCategoryFilter: React.FC<ImageCategoryFilterProps> = ({
 }) => {
   const [open, setOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [filteredImages, setFilteredImages] = useState<any[]>([]);
 
-  const filteredImages = fetchImagesSession.filter(
-    (image) => image.category === categoryName
-  );
+  useEffect(() => {
+    const fetchImages = async () => {
+      try {
+        const response = await axios.get("http://localhost:8080/api/images/");
+        const images = response.data;
+
+        // Filtra imágenes según la categoría
+        const filtered = images.filter(
+          (image: ImageProps) => image.Category.name === categoryName
+        );
+
+        console.log("FETCH", filtered);
+        setFilteredImages(filtered);
+      } catch (error) {
+        console.error("Error fetching images:", error);
+      }
+    };
+
+    fetchImages();
+  }, [categoryName]);
 
   const handleClickOpen = (image: string) => {
     setSelectedImage(image);
@@ -34,6 +61,8 @@ export const ImageCategoryFilter: React.FC<ImageCategoryFilterProps> = ({
     setSelectedImage(null);
   };
 
+  console.log("select", selectedImage);
+
   return (
     <>
       <div className="smashCake-gallery-container">
@@ -44,7 +73,7 @@ export const ImageCategoryFilter: React.FC<ImageCategoryFilterProps> = ({
                 <CardMedia
                   className="smashCake-gallery-card_media"
                   component="img"
-                  image={image.img}
+                  image={"http://localhost:8080/uploads/" + image.img}
                   onClick={() => handleClickOpen(image.img)}
                 />
               </Card>
@@ -72,7 +101,7 @@ export const ImageCategoryFilter: React.FC<ImageCategoryFilterProps> = ({
           </IconButton>
           {selectedImage && (
             <img
-              src={selectedImage}
+              src={"http://localhost:8080/uploads/" + selectedImage}
               alt="Expanded"
               className="expanded-image"
             />
