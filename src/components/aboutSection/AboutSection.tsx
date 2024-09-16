@@ -1,6 +1,7 @@
+import React from "react";
 import "./aboutSection.css";
 
-export const AboutSection = () => {
+export const AboutSection: React.FC = () => {
   return (
     <div className="about-section">
       <p className="about-section__subtitle">

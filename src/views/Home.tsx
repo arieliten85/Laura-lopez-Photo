@@ -5,8 +5,9 @@ import { Testimonials } from "../components/testimonialSection/TestimonialSectio
 import { Slider } from "../components/slider/Slider";
 import { ImagesHeadLineSlider } from "../apis/ImagesHeadLineSlider";
 import { WorkPresentation } from "../components/workPresentation/WorkPresentation";
+import React from "react";
 
-export const Home = () => {
+export const Home: React.FC = () => {
   return (
     <>
       <Slider ImagesHeadLineSlider={ImagesHeadLineSlider} filterName="home" />

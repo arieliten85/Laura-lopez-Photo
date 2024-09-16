@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import {
   Grid,
   Card,
@@ -14,9 +14,9 @@ interface ImageCategoryFilterProps {
   categoryName: string;
 }
 
-export const ImageCategoryFilter = ({
+export const ImageCategoryFilter: React.FC<ImageCategoryFilterProps> = ({
   categoryName,
-}: ImageCategoryFilterProps) => {
+}) => {
   const [open, setOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 

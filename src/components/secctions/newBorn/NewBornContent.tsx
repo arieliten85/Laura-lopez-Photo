@@ -1,8 +1,9 @@
 import "../newBorn/newBorn.css";
 import { ContactSession } from "../../contactSession/ContactSession";
 import { ImageCategoryFilter } from "../../../utilities/ImageCategoryFilter";
+import React from "react";
 
-export const NewBornContent = () => {
+export const NewBornContent: React.FC = () => {
   return (
     <>
       <NewBornFirstSection />

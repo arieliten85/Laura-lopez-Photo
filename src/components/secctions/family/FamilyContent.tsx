@@ -1,8 +1,9 @@
 import "../family/family.css";
 import { ContactSession } from "../../contactSession/ContactSession";
 import { ImageCategoryFilter } from "../../../utilities/ImageCategoryFilter";
+import React from "react";
 
-export const FamilyContent = () => {
+export const FamilyContent: React.FC = () => {
   return (
     <>
       <FamilyFirstSection />

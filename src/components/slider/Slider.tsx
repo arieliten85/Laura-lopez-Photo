@@ -8,13 +8,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import { SwiperConfigSlider } from "../../config/swipe/swipeConfig";
 import { HeadlineSliderProps } from "../../apis/ImagesHeadLineSlider";
+import React from "react";
 
 interface SliderProps {
   ImagesHeadLineSlider: HeadlineSliderProps[];
   filterName?: string;
 }
 
-export const Slider = ({ ImagesHeadLineSlider, filterName }: SliderProps) => {
+export const Slider: React.FC<SliderProps> = ({
+  ImagesHeadLineSlider,
+  filterName,
+}) => {
   return (
     <div className="slider-container">
       <Swiper {...SwiperConfigSlider}>

@@ -1,7 +1,8 @@
+import React from "react";
 import { FormContact } from "../formulario/FormContact";
 import "./contact.css";
 
-export const ContactContent = () => {
+export const ContactContent: React.FC = () => {
   return (
     <>
       <WeddingSecondSection />

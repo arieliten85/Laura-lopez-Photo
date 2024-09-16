@@ -1,8 +1,9 @@
 import "../maternity/maternity.css";
 import { ContactSession } from "../../contactSession/ContactSession";
 import { ImageCategoryFilter } from "../../../utilities/ImageCategoryFilter";
+import React from "react";
 
-export const MaternityContent = () => {
+export const MaternityContent: React.FC = () => {
   return (
     <>
       <MaternityFirstSection />

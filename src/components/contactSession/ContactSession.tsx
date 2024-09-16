@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import "./contactSession.css";
+import React from "react";
 
-export const ContactSession = () => {
+export const ContactSession: React.FC = () => {
   return (
     <div className="contact-session">
       <h1 className="contact-session__title">Reserva tu cita ahora</h1>

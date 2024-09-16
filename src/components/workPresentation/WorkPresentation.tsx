@@ -1,5 +1,6 @@
+import React from "react";
 import "./workPresentation.css";
-export const WorkPresentation = () => {
+export const WorkPresentation: React.FC = () => {
   return (
     <div className="galerySection-container">
       <div className="content-text">

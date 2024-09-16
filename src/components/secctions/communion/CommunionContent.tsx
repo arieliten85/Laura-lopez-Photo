@@ -2,8 +2,9 @@ import "./communion.css";
 import cameraIcon from "../../../assets/icono-camera.png";
 import { ContactSession } from "../../contactSession/ContactSession";
 import { ImageCategoryFilter } from "../../../utilities/ImageCategoryFilter";
+import React from "react";
 
-export const CommunionContent = () => {
+export const CommunionContent: React.FC = () => {
   return (
     <>
       <CommunionFirstSection />

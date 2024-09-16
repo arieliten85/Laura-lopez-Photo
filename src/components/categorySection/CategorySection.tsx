@@ -2,8 +2,9 @@ import { Grid, Card, CardMedia, CardContent, Typography } from "@mui/material";
 import "./categorySection.css";
 import { Link } from "react-router-dom";
 import { CategoryImageSection } from "../../apis/ImagesCategorySection";
+import React from "react";
 
-export function CategorySection() {
+export const CategorySection: React.FC = () => {
   return (
     <div className="category-section">
       <Grid container spacing={1} className="category-section__grid">
@@ -33,4 +34,4 @@ export function CategorySection() {
       </Grid>
     </div>
   );
-}
+};

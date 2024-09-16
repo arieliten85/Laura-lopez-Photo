@@ -1,8 +1,9 @@
 import "./babySixMoths.css";
 import { ContactSession } from "../../contactSession/ContactSession";
 import { ImageCategoryFilter } from "../../../utilities/ImageCategoryFilter";
+import React from "react";
 
-export const BabySixMothsContent = () => {
+export const BabySixMothsContent: React.FC = () => {
   return (
     <>
       <SixMothsFirstSection />

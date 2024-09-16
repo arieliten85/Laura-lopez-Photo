@@ -2,8 +2,9 @@ import "../smashCake/smashCake.css";
 
 import { ContactSession } from "../../contactSession/ContactSession";
 import { ImageCategoryFilter } from "../../../utilities/ImageCategoryFilter";
+import React from "react";
 
-export const SmashCakeContent = () => {
+export const SmashCakeContent: React.FC = () => {
   return (
     <>
       <SmashCakeFirstSection />

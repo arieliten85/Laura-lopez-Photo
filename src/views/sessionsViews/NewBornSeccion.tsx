@@ -1,8 +1,8 @@
 import { ImagesHeadLineSlider } from "../../apis/ImagesHeadLineSlider";
 import { NewBornContent } from "../../components/secctions/newBorn/NewBornContent";
 import { Slider } from "../../components/slider/Slider";
-
-export const NewBornSeccion = () => {
+import React from "react";
+export const NewBornSeccion: React.FC = () => {
   return (
     <>
       <Slider

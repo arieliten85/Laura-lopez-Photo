@@ -2,8 +2,9 @@ import "./wedding.css";
 import "../workPresentation/workPresentation.css";
 import { Testimonials } from "../testimonialSection/TestimonialSection";
 import { ImageCategoryFilter } from "../../utilities/ImageCategoryFilter";
+import React from "react";
 
-export const WeddingContent = () => {
+export const WeddingContent: React.FC = () => {
   return (
     <>
       <div className="wedding-intro">

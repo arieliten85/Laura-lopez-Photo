@@ -1,8 +1,9 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import "./formContact.css";
+import React from "react";
 
-export const FormContact = () => {
+export const FormContact: React.FC = () => {
   // Esquema de validación con Yup
   const validationSchema = Yup.object({
     nombre: Yup.string()

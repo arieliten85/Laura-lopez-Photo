@@ -1,11 +1,11 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import camera from "../../assets/icono-camera.png";
 import { FaBars, FaAngleDown } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
 import "./navigation.css";
 import { Link, useLocation } from "react-router-dom";
 
-export const Navigation = () => {
+export const Navigation: React.FC = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [showServices, setShowServices] = useState(false);
 
